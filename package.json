@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.12",
     "@hennge/vue3-pagination": "^1.0.17",
+    "@heroicons/vue": "^2.0.16",
     "@tailwindcss/line-clamp": "^0.4.2",
     "axios": "^1.3.4",
     "vue": "^3.2.45",
