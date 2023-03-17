@@ -31,7 +31,7 @@
         </div> -->
 
 
-    <div :class="{con:showLeft}" class="cha px-20 pb-10 my-10 grid grid-cols-5 md:grid-cols-5 gap-3">
+    <div :class="{con:showLeft}" class="cha pb-10 my-10 grid grid-cols-2 md:grid-cols-5 sm:grid-cols-2 gap-3">
         <div  class=" bg-white rounded-xl shadow-2xl text-center pb-5 pt-5" v-for="areaMeal in areaMeals" :key="areaMeal.strArea">
             <router-link :to="{name:'areaDetails', params:{idArea: areaMeal.strArea}}">
                 <h3 class="font-bold text-2xl">{{areaMeal.strArea}}</h3>
@@ -40,8 +40,8 @@
     </div>
     <Menu>
         <MenuButton  @click="showLeft = !showLeft" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gradient-to-l to-orange-400 from-orange-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-            <ChevronDownIcon v-if="!showLeft" class="transition-all ease -mr-1 h-5 w-5 text-gray-600" />
-            <ChevronUpIcon v-else class="transition ease-linear delay-500  -mr-1 h-5 w-5 text-gray-600" />
+            <ChevronDownIcon v-if="!showLeft" class="transition-all ease -mr-1 h-5 w-5 text-gray-600 text-[20px]" />
+            <ChevronUpIcon v-else class="transition ease-linear delay-500  -mr-1 h-5 w-5 text-gray-600 text-[20px]" />
         </MenuButton>
     </Menu>
 </template>

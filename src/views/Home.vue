@@ -14,7 +14,7 @@
 
     <RandomMeal/>
 
-    <Footer/>
+    <!-- <Footer/> -->
     
 </template>
 

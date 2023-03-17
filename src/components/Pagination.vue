@@ -1,5 +1,5 @@
   <template>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-20 pb-5 shadow bg-gradient-to-r from-orange-400 to-orange-300">
+    <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5 pb-5 shadow bg-gradient-to-r from-orange-400 to-orange-300">
       <!-- <div v-for="item in paginatedData" :key="item.id">{{ item }}</div> -->
       <MealItem v-for="meal in paginatedData" :key="meal.idMeal" :meal="meal"/>
     </div>
@@ -18,7 +18,9 @@
               </svg>
             </button>
           </li>
-          <li v-for="page in totalPages" :key="page" @click.prevent="currentPage = page" class="p-[10px] z-10 border  border-blue-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" :class="{'bg-blue-400 text-white': page === currentPage}">
+          <li v-for="page in totalPages" :key="page" @click.prevent="currentPage = page" 
+            class="p-[10px] z-10 border  border-blue-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" 
+            :class="{'bg-blue-400 text-white': page === currentPage}">
             <a class=" ">{{ page }}</a>
           </li>
           <li>

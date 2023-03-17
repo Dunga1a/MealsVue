@@ -1,5 +1,5 @@
 <template>
-  <div  >
+  <div>
     <!-- <Pagination :items="meals" :page-size="6"/> -->
       <!-- <MealItem v-for="(item, index) in paginatedData" :key="index" :meal="item" /> -->
       <!-- <div v-for="meal in meals" :key="meal.idMeal">
